@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>nKey</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
+	<body>
+		<header class="flex">
+			<figure class="logo flex vCenter center row">
+				<img src="./img/logo.svg">
+				<figurecaption>Ness</figurecaption>
+			</figure>
+			<div class="flex center vCenter contentInput">
+				<input type="text" id="searchInput" placeholder="Pesquisar"/>
+				<img src="./img/search.svg"/>
+			</div>
+		</header>
+		<main class="flex row">
+			<nav>
+				<div class="perfilContent flex vCenter center column">
+					<img src="./img/perfil.svg"/>
+					<p>Anderson Sousa</p>
+
+				</div>
+				<ul>
+					<li id="abaUsers">
+						<figure class="flex row vCenter">
+							<img src="./img/user.svg"/>
+							<figurecaption>Usuários</figurecaption>
+						</figure>
+					</li>
+					<li id="abaPublications">
+						<figure class="flex row vCenter">
+							<img src="./img/ballot-outline.svg"/>
+							<figurecaption>Publicações</figurecaption>
+						</figure>
+					</li>
+				</ul>
+			</nav>
+			<div class="flex column mainContent">
+				<section>
+					<h2 id="titulo">Lista de usuários</h2>
+					<table>
+						<thead id="users-thead">
+							<tr>
+								<th>ID</th>
+								<th>Nome</th>
+								<th>Email</th>
+							</tr>
+						</thead>
+						<tbody id="users"></tbody>
+					</table>
+
+				</section>
+				<section>
+					<h2>Informações</h2>
+					<div id="info"></div>
+
+				</section>
+			</div>
+		</main>
+		<script src="js/script.js"></script>
+	</body>
+</html>
