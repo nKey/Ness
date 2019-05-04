@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Roboto');
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.flex{
+	display: flex;
+}
+
+.center{
+	justify-content: center;
+}
+
+.vCenter{
+	align-items: center;
+}
+
+.row{
+	flex-direction:row;
+}
+
+.column{
+	flex-direction:column;
+}
+
+.between{
+ justify-content: space-between;
+}
+
+.around{
+	justify-content: space-around;
+}
+
+header{
+	height: 50px;
+	background-color: #ee5253;
+}
+
+.logo{
+	height: 100%;
+	margin-left: 15px;
+
+}
+
+.logo img{
+	height: 70%;
+	margin-right:5px;
+}
+
+.logo figurecaption{
+	color:white;
+	font-size:1.15em;
+	font-family: 'Courgette', cursive;
+}
+
+header .contentInput{
+	flex:1;
+}
+
+
+header .contentInput input{
+	height: 30px;
+	width: 30%;
+	border:0;
+	padding-left: 5px;
+	border-radius:3px 0 0 3px;
+	outline:none;
+	color:rgba(0,0,0,0.85);
+}
+
+header .contentInput img{
+	height: 30px;
+	width: 30px;
+	padding: 5px;
+	background-color: white;
+	border-radius:0 3px 3px 0;
+	cursor:pointer;
+}
+
+main{
+	height: calc(100vh - 50px);
+}
+
+.mainContent{
+	flex:1;
+}
+
+nav{
+	min-height: 100%;
+	width: 200px;
+	background-color:#222f3e;
+	color: white;
+	list-style-type: none;
+	padding:20px 10px;
+}
+
+nav .perfilContent{
+	width:100%;
+	margin-bottom: 15px;
+}
+
+nav .perfilContent img{
+	width:70%;
+	border-radius:150px;
+	object-fit: cover;
+	margin-bottom: 7px;
+}
+
+nav hr{
+	height: 1px;
+	width: 100%;
+	border: 1px dashed white;
+	margin:16px 0;
+}
+
+nav ul{
+	background-color: rgba(255,255,255,0.1);
+	border-radius:4px;
+}
+
+nav ul li{
+	padding:7px 10px;
+	cursor:pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav figure{
+	font-size:14px;
+}
+
+nav figure img{
+	width:15px;
+	margin-right: 5px;
+}
+
+section{
+	padding: 15px 25px;
+	color:rgba(0,0,0,0.7);
+	overflow-y: auto;
+}
+
+section:nth-child(1){
+	height: 50%;
+		background-color: #fafafa;
+
+}
+section:nth-child(2){
+	border-left:1px solid #ddd;
+	height:50%;
+		background-color: #f3f3f3;
+}
+
+#info{
+	 display: flex;
+	 flex-wrap: wrap;
+	 align-items: center;
+	 justify-content: center;
+	margin-top: 20px;
+}
+
+#info p{
+	text-align: center;
+}
+
+#info p:not(:first-child){
+	margin-left:10px;
+}
+
+section h2{
+	text-align:center;
+	font-size:18px;
+
+}
+
+
+table{
+	width: 100%;
+	margin-top: 20px;
+	border-spacing: 0;
+}
+
+tr{
+	border-bottom:1px dashed #ddd;
+	text-align: center;
+	padding: 8px 5px;
+
+}
+
+tbody tr:nth-child(even), thead tr{
+	background-color: #eee;
+}
+
+tbody tr{
+	cursor:pointer;
+}
+
+td, th{
+	flex:4;
+	vertical-align: middle;
+	text-align: center;
+	border:0;
+	padding: 7px;
+}
+
+
+.cellWithoutSize{
+	flex:1;
+}
+
